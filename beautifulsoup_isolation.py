@@ -29,7 +29,7 @@ for string in soup.strings:
 # bound of indexes now incorporated into if statements above
 
 # below are bounds for sublist of main strings, where specific info would be located
-# indexA = holding.index('Inmate Mailing Address:')
+# indexA = holding.index(' Mailing Address:')
 # indexB = holding.index('Search for a Facility')
 
 print(indexB)
@@ -51,7 +51,7 @@ print(h0)
 
 
 # below indices is list of indices in h2 where zip code match occurs
-# now i need to set each index/element of indices as a base index for writing/capturing
+# now to set each index/element of indices as a base index for writing/capturing
 # to save to csv
 regex = r"^[^0-9]+(\,\s){1}([A-Z]{2}|[A-Za-z]+){1}\s(\d{5})(?:[-]\d{4})?"    
 pattern = re.compile(r'^[^0-9]+(\,\s){1}([A-Z]{2}|[A-Za-z]+){1}\s(\d{5})(?:[-]\d{4})?')   
